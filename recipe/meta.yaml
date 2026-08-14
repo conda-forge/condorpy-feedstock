@@ -1,5 +1,5 @@
 {% set name = "condorpy" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2a8d9872f7fa45c33ef213e4612219924c8e411d046e5e4795da70ebeb7284e5
+  sha256: 70cd70471d0f4caaa17b0e4a61e7c5b872d796c7b743f38c0cc123c1ef601b0b
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
